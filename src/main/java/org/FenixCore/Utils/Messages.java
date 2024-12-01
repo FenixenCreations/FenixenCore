@@ -7,23 +7,23 @@ import org.bukkit.entity.Player;
 
 public class Messages {
 
-    public void commandMessageColor(CommandSender sender, String message){
+    public static void commandMessageColor(CommandSender sender, String message){
         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
     }
 
-    public void consoleMessageColor(String message){
+    public static void consoleMessageColor(String message){
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', message));
     }
 
-    public void loggerMessageColor(String message){
+    public static void loggerMessageColor(String message){
         Bukkit.getLogger().info(translateToAnsi(message));
     }
 
-    public void playerMessageColor(Player player, String message){
+    public static void playerMessageColor(Player player, String message){
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
     }
 
-    public String translateToAnsi(String text){
+    public static String translateToAnsi(String text){
         return text
                 .replace("&0", "\u001B[30m") // Negro
                 .replace("&1", "\u001B[34m") // Azul oscuro
