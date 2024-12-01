@@ -1,11 +1,9 @@
-package org.FenixCreations.Utils;
+package org.FenixCore.Utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-
-import java.sql.Struct;
 
 public class Messages {
 
